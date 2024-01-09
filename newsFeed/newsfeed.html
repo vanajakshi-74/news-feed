@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="code.css">
+    <title>News Feed</title>
+</head>
+<body>
+    <div id="canvas">
+        <div id="heading">   
+            <h3> NEWS FEED<span id="selectionTitle"></span></h3>
+            <h3><img src="th.jpg" height="200" width="400"></h3>
+            <h4 id="date"></h4>
+        </div>
+        <div class="topnav">
+            <form action="http://feeds.bbci.co.uk/news/technology/rss.xml" method="get" class="search">
+                <text align="center"><input type="text" id="mySearch" name="q" placeholder="Search the site...." value=""></text>
+                <button type="button">submit</button>
+            </form>
+        </div>
+        <div id="feed-textarea">
+            <ul></ul>
+        </div>
+    </div>
+    <script src="https://static.sekandocdn.net/static/feednami/feednami-client-v1.1.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
